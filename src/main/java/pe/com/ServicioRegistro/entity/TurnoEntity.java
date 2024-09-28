@@ -20,7 +20,7 @@ import java.io.Serializable;
 public class TurnoEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    // Llave Primaria
+    // Llave Primaria (PK)
     @Id
     @Column(name = "codTurno")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
