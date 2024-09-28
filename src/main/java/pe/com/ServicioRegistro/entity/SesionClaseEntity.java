@@ -1,6 +1,8 @@
 package pe.com.ServicioRegistro.entity;
 
 import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Date;
 
 import jakarta.persistence.*;
@@ -34,13 +36,13 @@ public class SesionClaseEntity implements Serializable {
     private CursoEntity curso;
 
     @Column(name = "fechaSesion")
-    private Date fecha;
+    private LocalDate fecha;
 
     @Column(name = "horaInicioSesion")
-    private Time horaInicio;
+    private LocalTime horaInicio;
 
     @Column(name = "horaFinSesion")
-    private Time horaFin;
+    private LocalTime horaFin;
 
     @Column(name = "estSesion")
     private boolean estado;
