@@ -35,7 +35,7 @@ public class AlumnoEntity implements Serializable {
     @Column(name = "apemAlumno")
     private String apellidoMaterno;
 
-    @Column(name = "apemAlumno")
+    @Column(name = "dirAlumno")
     private String direccion;
 
     @Column(name = "correoAlumno")
