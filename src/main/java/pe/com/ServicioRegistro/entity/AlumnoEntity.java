@@ -22,37 +22,37 @@ public class AlumnoEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codAlumno")
+    @Column(name = "codalumno")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomAlumno")
+    @Column(name = "nomalumno")
     private String nombre;
 
-    @Column(name = "apepAlumno")
+    @Column(name = "apepalumno")
     private String apellidoPaterno;
 
-    @Column(name = "apemAlumno")
+    @Column(name = "apemalumno")
     private String apellidoMaterno;
 
-    @Column(name = "dirAlumno")
+    @Column(name = "diralumno")
     private String direccion;
 
-    @Column(name = "correoAlumno")
+    @Column(name = "correoalumno")
     private String correo;
 
     @ManyToOne
-    @JoinColumn(name="codGrado", nullable = false)
+    @JoinColumn(name="codgrado", nullable = false)
     private GradoEntity grado;
 
     @ManyToOne
-    @JoinColumn(name="codSeccion", nullable = false)
+    @JoinColumn(name="codseccion", nullable = false)
     private SeccionEntity seccion;
 
     @ManyToOne
-    @JoinColumn(name="codTurno", nullable = false)
+    @JoinColumn(name="codturno", nullable = false)
     private TurnoEntity turno;
 
-    @Column(name = "estAlumno")
+    @Column(name = "estalumno")
     private boolean estado;
 }

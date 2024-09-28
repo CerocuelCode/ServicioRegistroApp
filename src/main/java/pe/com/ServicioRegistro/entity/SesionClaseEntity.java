@@ -27,23 +27,23 @@ public class SesionClaseEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codSesion")
+    @Column(name = "codsesion")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
     @ManyToOne
-    @JoinColumn(name="codCurso", nullable = false)
+    @JoinColumn(name="codcurso", nullable = false)
     private CursoEntity curso;
 
-    @Column(name = "fechaSesion")
+    @Column(name = "fechasesion")
     private LocalDate fecha;
 
-    @Column(name = "horaInicioSesion")
+    @Column(name = "horainiciosesion")
     private LocalTime horaInicio;
 
-    @Column(name = "horaFinSesion")
+    @Column(name = "horafinsesion")
     private LocalTime horaFin;
 
-    @Column(name = "estSesion")
+    @Column(name = "estsesion")
     private boolean estado;
 }

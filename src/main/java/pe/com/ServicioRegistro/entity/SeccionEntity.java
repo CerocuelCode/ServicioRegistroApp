@@ -22,13 +22,13 @@ public class SeccionEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codSeccion")
+    @Column(name = "codseccion")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomSeccion")
+    @Column(name = "nomseccion")
     private String nombre;
 
-    @Column(name = "estSeccion")
+    @Column(name = "estseccion")
     private boolean estado;
 }

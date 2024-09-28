@@ -22,13 +22,13 @@ public class GradoEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codGrado")
+    @Column(name = "codgrado")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomGrado")
+    @Column(name = "nomgrado")
     private String nombre;
 
-    @Column(name = "estGrado")
+    @Column(name = "estgrado")
     private boolean estado;
 }

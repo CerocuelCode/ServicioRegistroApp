@@ -22,18 +22,18 @@ public class AsistenciaEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codAsistencia")
+    @Column(name = "codasistencia")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
     @ManyToOne
-    @JoinColumn(name="codAlumno", nullable = false)
+    @JoinColumn(name="codalumno", nullable = false)
     private AlumnoEntity alumno;
 
     @ManyToOne
-    @JoinColumn(name="codSesion", nullable = false)
+    @JoinColumn(name="codsesion", nullable = false)
     private SesionClaseEntity sesion;
 
-    @Column(name = "presenteAsistencia")
+    @Column(name = "presenteasistencia")
     private boolean presente;
 }

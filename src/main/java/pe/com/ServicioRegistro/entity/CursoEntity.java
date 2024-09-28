@@ -22,17 +22,17 @@ public class CursoEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codCurso")
+    @Column(name = "codcurso")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomCurso")
+    @Column(name = "nomcurso")
     private String nombre;
 
     @ManyToOne
-    @JoinColumn(name="codProfesor", nullable = false)
+    @JoinColumn(name="codprofesor", nullable = false)
     private ProfesorEntity profesor;
 
-    @Column(name = "estCurso")
+    @Column(name = "estcurso")
     private boolean estado;
 }

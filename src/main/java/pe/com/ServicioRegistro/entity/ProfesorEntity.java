@@ -22,25 +22,25 @@ public class ProfesorEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codProfesor")
+    @Column(name = "codprofesor")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomProfesor")
+    @Column(name = "nomprofesor")
     private String nombre;
 
-    @Column(name = "apepProfesor")
+    @Column(name = "apepprofesor")
     private String apellidoPaterno;
 
-    @Column(name = "apemProfesor")
+    @Column(name = "apemprofesor")
     private String apellidoMaterno;
 
-    @Column(name = "dirProfesor")
+    @Column(name = "dirprofesor")
     private String direccion;
 
-    @Column(name = "correoProfesor")
+    @Column(name = "correoprofesor")
     private String correo;
 
-    @Column(name = "estProfesor")
+    @Column(name = "estprofesor")
     private boolean estado;
 }

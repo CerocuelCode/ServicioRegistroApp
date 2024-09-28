@@ -22,13 +22,13 @@ public class TurnoEntity implements Serializable {
 
     // Llave Primaria (PK)
     @Id
-    @Column(name = "codTurno")
+    @Column(name = "codturno")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
 
-    @Column(name = "nomTurno")
+    @Column(name = "nomturno")
     private String nombre;
 
-    @Column(name = "estTurno")
+    @Column(name = "estturno")
     private boolean estado;
 }
