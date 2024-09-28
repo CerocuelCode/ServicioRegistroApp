@@ -1,7 +1,6 @@
 package pe.com.ServicioRegistro.service;
 
 import pe.com.ServicioRegistro.entity.CursoEntity;
-
 import java.util.List;
 
 public interface CursoService {
